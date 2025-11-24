@@ -1,0 +1,13 @@
+{
+    "friendManagement": "朋友管理",
+    "addFriend": "添加朋友",
+    "name": "姓名",
+    "birthday": "生日",
+    "relationship": "关系",
+    "tags": "标签",
+    "contact": "联系方式",
+    "notes": "备注",
+    "quickRecord": "快速记录",
+    "interactionHistory": "互动历史",
+    "upcomingReminders": "即将提醒"
+}

@@ -1,0 +1,290 @@
+/* 朋友关系插件样式 */
+.friendship-panel {
+    padding: 10px;
+    background: var(--b3-theme-background);
+    color: var(--b3-theme-on-background);
+    height: 100%;
+    overflow-y: auto;
+}
+
+/* 顶部标题 + 添加按钮区域 */
+.friendship-panel__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--b3-theme-surface);
+}
+
+.friendship-panel__header h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.friendship-panel__add-btn {
+    background: var(--b3-theme-primary);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.friendship-panel__search {
+    margin-bottom: 10px;
+}
+
+.friendship-panel__search-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--b3-theme-surface);
+    border-radius: 4px;
+    background: var(--b3-theme-surface);
+    color: var(--b3-theme-on-surface);
+}
+
+/* 搜索条件与筛选器 */
+.friendship-panel__filters {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.friendship-panel__filters select {
+    flex: 1;
+    padding: 6px;
+    border: 1px solid var(--b3-theme-surface);
+    border-radius: 4px;
+    background: var(--b3-theme-surface);
+    color: var(--b3-theme-on-surface);
+}
+
+/* 朋友卡片列表 */
+.friendship-panel__list {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+
+/* 单个朋友卡片 */
+.friend-card {
+    background: var(--b3-theme-surface);
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 8px;
+    border: 1px solid var(--b3-theme-surface);
+}
+
+.friend-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.friend-card__name {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.friend-card__relationship {
+    font-size: 12px;
+    color: var(--b3-theme-secondary);
+    background: var(--b3-theme-background);
+    padding: 2px 6px;
+    border-radius: 10px;
+}
+
+.friend-card__details {
+    margin-bottom: 10px;
+}
+
+.friend-card__intimacy {
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.friend-card__tags {
+    margin-bottom: 4px;
+}
+
+.tag {
+    display: inline-block;
+    background: var(--b3-theme-primary-light);
+    color: var(--b3-theme-on-primary);
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-size: 10px;
+    margin-right: 4px;
+}
+
+.friend-card__last-contact {
+    font-size: 11px;
+    color: var(--b3-theme-secondary);
+}
+
+.friend-card__actions {
+    display: flex;
+    gap: 6px;
+}
+
+.btn-sm {
+    padding: 4px 8px;
+    font-size: 11px;
+    border: 1px solid var(--b3-theme-outline);
+    background: transparent;
+    color: var(--b3-theme-on-surface);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* 底部快捷按钮 */
+.friendship-panel__quick-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.friendship-panel__action-btn {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid var(--b3-theme-outline);
+    background: var(--b3-theme-surface);
+    color: var(--b3-theme-on-surface);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* 对话框样式 */
+.friendship-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.friendship-dialog__content {
+    background: var(--b3-theme-background);
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90vw;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.friendship-dialog__content h4 {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--b3-theme-outline);
+    border-radius: 4px;
+    background: var(--b3-theme-surface);
+    color: var(--b3-theme-on-surface);
+    font-size: 12px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 60px;
+}
+
+.mood-selector {
+    display: flex;
+    gap: 8px;
+}
+
+.mood-option {
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+
+.mood-option[data-selected] {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.btn-cancel,
+.btn-submit {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.btn-cancel {
+    background: var(--b3-theme-surface);
+    color: var(--b3-theme-on-surface);
+}
+
+.btn-submit {
+    background: var(--b3-theme-primary);
+    color: white;
+}
+
+/* 消息提示 */
+.friendship-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 12px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    z-index: 1001;
+}
+
+.friendship-message--success {
+    background: #4caf50;
+    color: white;
+}
+
+.friendship-message--error {
+    background: #f44336;
+    color: white;
+}
+
+/* 空状态 */
+.friendship-panel__empty,
+.friendship-panel__loading {
+    text-align: center;
+    padding: 20px;
+    color: var(--b3-theme-secondary);
+    font-size: 12px;
+}

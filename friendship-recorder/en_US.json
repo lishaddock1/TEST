@@ -1,0 +1,22 @@
+{
+    "friendManagement": "Friend Management",
+    "addFriend": "Add Friend",
+    "searchFriends": "Search friends...",
+    "quickRecord": "Quick Record",
+    "upcomingReminders": "Upcoming Reminders",
+    "analytics": "Analytics",
+    "name": "Name",
+    "relationship": "Relationship",
+    "birthday": "Birthday",
+    "contact": "Contact",
+    "notes": "Notes",
+    "tags": "Tags",
+    "intimacy": "Intimacy",
+    "lastContact": "Last Contact",
+    "view": "View",
+    "record": "Record",
+    "save": "Save",
+    "cancel": "Cancel",
+    "success": "Success",
+    "error": "Error"
+}

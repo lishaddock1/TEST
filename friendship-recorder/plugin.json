@@ -1,0 +1,32 @@
+{
+    "name": "friendship-recorder",
+    "version": "1.0.0",
+    "author": "Tom",
+    "description": "管理朋友关系和互动记录的思源笔记插件",
+    "homepage": "",
+    "repository": "",
+    "license": "MIT",
+    "main": "dist/main.js",
+    "keywords": [
+        "朋友",
+        "社交",
+        "记录"
+    ],
+    "siyuan": {
+        "minAppVersion": "2.8.0",
+        "author": "Tom",
+        "name": {
+            "en_US": "Friendship Recorder",
+            "zh_CN": "朋友关系记录"
+        },
+        "description": {
+            "en_US": "Manage your friendships and interaction records",
+            "zh_CN": "管理你的朋友关系和互动记录"
+        },
+        "icons": {
+            "16": "icons/16.png",
+            "48": "icons/48.png",
+            "128": "icons/128.png"
+        }
+    }
+}
